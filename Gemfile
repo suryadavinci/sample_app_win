@@ -60,3 +60,7 @@ group :production do
 end
 
 gem 'coffee-script-source', '1.8.0'
+
+gem 'minitest'
+
+gem 'test-unit'
