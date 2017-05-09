@@ -59,3 +59,4 @@ group :production do
   gem 'pg', '0.12.2'
 end
 
+gem 'coffee-script-source', '1.8.0'
