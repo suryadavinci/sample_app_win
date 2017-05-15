@@ -3,6 +3,11 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap";
 
+
+/* mixins, variables, etc. */
+$grayMediumLight: #eaeaea;
+$grayLight: #999;
+$grayDarker: #222;
 /*universal*/
 html {
 overflow-y: scroll;
@@ -20,13 +25,14 @@ resize: vertical;
 }
 .center {
 text-align: center;
-}
-.center h1 {
-margin-bottom: 10px;
+  h1 {
+  margin-bottom: 10px;
+  }
 }
 
+/*typography*/
 
-header {  background-color: #302D2E}
+
 h1, h2, h3, h4, h5, h6 {
 line-height: 1;
 }
@@ -37,59 +43,61 @@ letter-spacing: -2px;
 margin-bottom: 30px;
 text-align: center;
 }
+
 h2 {
 font-size: 1.7em;
 letter-spacing: -1px;
 margin-bottom: 30px;
 text-align: center;
 font-weight: normal;
-color: #999;
-} p
-{
+color: $grayLight;
+}
+
+p {
 font-size: 1.1em;
 line-height: 1.7em;
 }
+
+/*header*/
+header {  background-color: #302D2E}
 
 #logo {
 float: left;
 margin-right: 10px;
 font-size: 1.7em;
-color: #fff;
+color: white;
 text-transform: uppercase;
 letter-spacing: -1px;
 padding-top: 9px;
 font-weight: bold;
 line-height: 1;
+  &:hover {
+  color: #c21;
+  text-decoration: none;
+  }
 }
-#logo:hover {
-color: #c21;
-text-decoration: none;
-}
-
-
 
 /* footer */
 footer {
 margin-top: 45px;
 padding-top: 5px;
-border-top: 1px solid #eaeaea;
-color: #999;
-}
-footer a {
-color: #555;
-}
-
-footer a:hover {
-color: #222;
-}
-footer small {
-float: left;
-}
-footer ul {
-float: right;
-list-style: none;
-}
-footer ul li {
-float: left;
-margin-left: 10px;
+border-top: 1px solid $grayMediumLight;
+color: $grayLight;
+  a {
+    color: #555;
+    &:hover {
+      color: $grayDarker;
+    }
+  }
+  small {
+  float: left;
+  }
+  ul {
+  float: right;
+  list-style: none;
+    li {
+    float: left;
+    margin-left: 10px;
+    }
+  }
 }
