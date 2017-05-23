@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :products
   get 'users/new'
 
   root to: 'static_pages#home'
