@@ -10,4 +10,7 @@
 #
 
 class User < ApplicationRecord
+  VALID_EMAIL_REGEX = \@
+  validates :name, presence: true
+  validates :email, presence: true, length: {maximum: 50} , format: {with: VALID_EMAIL_REGEX}
 end
