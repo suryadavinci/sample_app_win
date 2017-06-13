@@ -70,3 +70,5 @@ gem 'test-unit'
 gem 'bootstrap-sass'
 
 gem 'rake', '< 11.0'
+#gem 'bcrypt'
+gem 'bcrypt-ruby', '3.0.1'
